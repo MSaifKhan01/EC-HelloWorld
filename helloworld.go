@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("helloworld: received a request")
 	target := os.Getenv("TARGET")
 	if target == "" {
-		target = "Knative--02"
+		target = "Knative--03"
 	}
 	fmt.Fprintf(w, "Hello for Test my API ---02 success  %s!\n", target)
 }
